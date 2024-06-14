@@ -1,0 +1,1 @@
+-wto "20db2e0947404fae87907c1eb81b7097" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "game_controller_behav" "xil_defaultlib.game_controller" "xil_defaultlib.glbl" -log "elaborate.log" 

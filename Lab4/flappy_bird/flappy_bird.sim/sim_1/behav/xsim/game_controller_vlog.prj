@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../flappy_bird.srcs/sources_1/new/check_collision.v" \
+"../../../../flappy_bird.srcs/sources_1/new/clock_divider.v" \
+"../../../../flappy_bird.srcs/sources_1/new/debouncer.v" \
+"../../../../flappy_bird.srcs/sources_1/new/obstacle.v" \
+"../../../../flappy_bird.srcs/sources_1/new/player.v" \
+"../../../../flappy_bird.srcs/sources_1/new/score.v" \
+"../../../../flappy_bird.srcs/sources_1/new/vga_sync.v" \
+"../../../../flappy_bird.srcs/sources_1/new/game_controller.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

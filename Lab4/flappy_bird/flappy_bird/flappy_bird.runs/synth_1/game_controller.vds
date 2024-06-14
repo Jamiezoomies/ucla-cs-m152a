@@ -1,0 +1,437 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu May 30 13:52:22 2024
+# Process ID: 11800
+# Current directory: C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.runs/synth_1
+# Command line: vivado.exe -log game_controller.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source game_controller.tcl
+# Log file: C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.runs/synth_1/game_controller.vds
+# Journal file: C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source game_controller.tcl -notrace
+Command: synth_design -top game_controller -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11888 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 435.773 ; gain = 95.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'game_controller' [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/game_controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/clock_divider.v:1]
+	Parameter DIVIDE_FACTOR_10HZ bound to: 5000000 - type: integer 
+	Parameter DIVIDE_FACTOR_500HZ bound to: 100000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/clock_divider.v:1]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/debouncer.v:1]
+	Parameter DEBOUNCE_TIME bound to: 1000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (2#1) [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/debouncer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'obstacle' [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/obstacle.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'obstacle' (3#1) [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/obstacle.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'speed' does not match port width (1) of module 'obstacle' [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/game_controller.v:66]
+INFO: [Synth 8-6157] synthesizing module 'player' [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:2]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:15]
+WARNING: [Synth 8-567] referenced signal 'initial_y' should be on the sensitivity list [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'player' (4#1) [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:2]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/Student/Downloads/vga.v:21]
+	Parameter H_DISPLAY bound to: 640 - type: integer 
+	Parameter H_L_BORDER bound to: 48 - type: integer 
+	Parameter H_R_BORDER bound to: 16 - type: integer 
+	Parameter H_RETRACE bound to: 96 - type: integer 
+	Parameter H_MAX bound to: 799 - type: integer 
+	Parameter START_H_RETRACE bound to: 656 - type: integer 
+	Parameter END_H_RETRACE bound to: 751 - type: integer 
+	Parameter V_DISPLAY bound to: 480 - type: integer 
+	Parameter V_T_BORDER bound to: 10 - type: integer 
+	Parameter V_B_BORDER bound to: 33 - type: integer 
+	Parameter V_RETRACE bound to: 2 - type: integer 
+	Parameter V_MAX bound to: 524 - type: integer 
+	Parameter START_V_RETRACE bound to: 513 - type: integer 
+	Parameter END_V_RETRACE bound to: 514 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (5#1) [C:/Users/Student/Downloads/vga.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'game_controller' (6#1) [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/game_controller.v:23]
+WARNING: [Synth 8-3331] design player has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 489.582 ; gain = 149.793
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 489.582 ; gain = 149.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 489.582 ; gain = 149.793
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'segment[0]'. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[1]'. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[2]'. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[3]'. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[4]'. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[5]'. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[6]'. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[7]'. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/game_controller_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/game_controller_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 823.477 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 823.477 ; gain = 483.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 823.477 ; gain = 483.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 823.477 ; gain = 483.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 823.477 ; gain = 483.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 10    
+	   3 Input     10 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 6     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clock_divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module obstacle 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+Module player 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+Module vga_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 5     
+	   3 Input     10 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element cd/clk_500hz_reg was removed.  [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/clock_divider.v:24]
+WARNING: [Synth 8-3917] design game_controller has port vgaBlue[3] driven by constant 0
+WARNING: [Synth 8-3917] design game_controller has port vgaBlue[2] driven by constant 0
+WARNING: [Synth 8-3917] design game_controller has port vgaBlue[1] driven by constant 0
+WARNING: [Synth 8-3917] design game_controller has port vgaBlue[0] driven by constant 0
+WARNING: [Synth 8-3332] Sequential element (player/current_speed_reg[6]) is unused and will be removed from module game_controller.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_speed_reg[6] with 1st driver pin 'player/current_speed_reg[6]/Q' [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_speed_reg[6] with 2nd driver pin 'GND' [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net current_speed_reg[6] is connected to constant driver, other driver is ignored [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+WARNING: [Synth 8-3332] Sequential element (player/current_speed_reg[5]) is unused and will be removed from module game_controller.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_speed_reg[5] with 1st driver pin 'player/current_speed_reg[5]/Q' [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_speed_reg[5] with 2nd driver pin 'GND' [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net current_speed_reg[5] is connected to constant driver, other driver is ignored [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+WARNING: [Synth 8-3332] Sequential element (player/current_speed_reg[4]) is unused and will be removed from module game_controller.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_speed_reg[4] with 1st driver pin 'player/current_speed_reg[4]/Q' [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_speed_reg[4] with 2nd driver pin 'GND' [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net current_speed_reg[4] is connected to constant driver, other driver is ignored [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+WARNING: [Synth 8-3332] Sequential element (player/current_speed_reg[3]) is unused and will be removed from module game_controller.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_speed_reg[3] with 1st driver pin 'player/current_speed_reg[3]/Q' [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_speed_reg[3] with 2nd driver pin 'GND' [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net current_speed_reg[3] is connected to constant driver, other driver is ignored [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+WARNING: [Synth 8-3332] Sequential element (player/current_speed_reg[2]) is unused and will be removed from module game_controller.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_speed_reg[2] with 1st driver pin 'player/current_speed_reg[2]/Q' [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_speed_reg[2] with 2nd driver pin 'GND' [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net current_speed_reg[2] is connected to constant driver, other driver is ignored [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+WARNING: [Synth 8-3332] Sequential element (player/current_speed_reg[1]) is unused and will be removed from module game_controller.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_speed_reg[1] with 1st driver pin 'player/current_speed_reg[1]/Q' [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_speed_reg[1] with 2nd driver pin 'GND' [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net current_speed_reg[1] is connected to constant driver, other driver is ignored [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+WARNING: [Synth 8-3332] Sequential element (player/current_speed_reg[0]) is unused and will be removed from module game_controller.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_speed_reg[0] with 1st driver pin 'player/current_speed_reg[0]/Q' [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net current_speed_reg[0] with 2nd driver pin 'GND' [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net current_speed_reg[0] is connected to constant driver, other driver is ignored [C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.srcs/sources_1/new/player.v:26]
+WARNING: [Synth 8-3332] Sequential element (player/y_pos_reg[9]) is unused and will be removed from module game_controller.
+WARNING: [Synth 8-3332] Sequential element (player/y_pos_reg[8]) is unused and will be removed from module game_controller.
+WARNING: [Synth 8-3332] Sequential element (player/y_pos_reg[7]) is unused and will be removed from module game_controller.
+WARNING: [Synth 8-3332] Sequential element (player/y_pos_reg[6]) is unused and will be removed from module game_controller.
+WARNING: [Synth 8-3332] Sequential element (player/y_pos_reg[5]) is unused and will be removed from module game_controller.
+WARNING: [Synth 8-3332] Sequential element (player/y_pos_reg[4]) is unused and will be removed from module game_controller.
+WARNING: [Synth 8-3332] Sequential element (player/y_pos_reg[3]) is unused and will be removed from module game_controller.
+WARNING: [Synth 8-3332] Sequential element (player/y_pos_reg[2]) is unused and will be removed from module game_controller.
+WARNING: [Synth 8-3332] Sequential element (player/y_pos_reg[1]) is unused and will be removed from module game_controller.
+WARNING: [Synth 8-3332] Sequential element (player/y_pos_reg[0]) is unused and will be removed from module game_controller.
+WARNING: [Synth 8-3332] Sequential element (db2/noisy_signal_reg) is unused and will be removed from module game_controller.
+WARNING: [Synth 8-3332] Sequential element (db2/btn_d_reg) is unused and will be removed from module game_controller.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 823.477 ; gain = 483.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 823.477 ; gain = 483.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 834.895 ; gain = 495.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 836.707 ; gain = 496.918
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 836.707 ; gain = 496.918
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 836.707 ; gain = 496.918
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 836.707 ; gain = 496.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 836.707 ; gain = 496.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 836.707 ; gain = 496.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 836.707 ; gain = 496.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT1   |     5|
+|4     |LUT2   |     8|
+|5     |LUT3   |    13|
+|6     |LUT4   |    18|
+|7     |LUT5   |    24|
+|8     |LUT6   |    31|
+|9     |FDCE   |    24|
+|10    |FDRE   |    49|
+|11    |IBUF   |     2|
+|12    |OBUF   |    14|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+--------------+------+
+|      |Instance |Module        |Cells |
++------+---------+--------------+------+
+|1     |top      |              |   201|
+|2     |  bar1   |obstacle      |    38|
+|3     |  cd     |clock_divider |    45|
+|4     |  db1    |debouncer     |    26|
+|5     |  vga    |vga_sync      |    75|
++------+---------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 836.707 ; gain = 496.918
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 21 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 836.707 ; gain = 163.023
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 836.707 ; gain = 496.918
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 40 Warnings, 33 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 838.582 ; gain = 511.152
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Student/Desktop/Brad_Tae/flappy_bird/flappy_bird.runs/synth_1/game_controller.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file game_controller_utilization_synth.rpt -pb game_controller_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 838.582 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu May 30 13:52:52 2024...

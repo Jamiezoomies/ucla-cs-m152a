@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1717533385">
+  <File Type="BITSTR-BMM" Name="game_controller_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="game_controller_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="game_controller_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="game_controller_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="game_controller.tcl"/>
+  <File Type="OPT-TIMING" Name="game_controller_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="game_controller_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="game_controller_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="game_controller_reports.tcl"/>
+  <File Type="OPT-DRC" Name="game_controller_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="game_controller.hwdef"/>
+  <File Type="PWROPT-DCP" Name="game_controller_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="game_controller_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="game_controller_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="game_controller_placed.dcp"/>
+  <File Type="PLACE-IO" Name="game_controller_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="game_controller_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="game_controller_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="game_controller_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="game_controller_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="game_controller_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="game_controller_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="game_controller.bgn"/>
+  <File Type="PLACE-TIMING" Name="game_controller_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="game_controller_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="game_controller.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="game_controller_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="game_controller_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="game_controller_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="game_controller.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="game_controller_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="game_controller_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="game_controller_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="game_controller_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="game_controller_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="game_controller_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="game_controller.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="game_controller_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="game_controller.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="game_controller_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="game_controller_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="game_controller.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="game_controller_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="game_controller_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="game_controller_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="game_controller_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="game_controller_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="game_controller_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="game_controller_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="game_controller_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="game_controller_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="game_controller_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="game_controller_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="game_controller_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="game_controller_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="game_controller_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="game_controller_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="game_controller_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="game_controller_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="game_controller_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="game_controller_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="game_controller.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="game_controller_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="game_controller.rbt"/>
+  <File Type="BITSTR-NKY" Name="game_controller.nky"/>
+  <File Type="BG-DRC" Name="game_controller.drc"/>
+  <File Type="RDI-RDI" Name="game_controller.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/check_collision.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_divider.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/debouncer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/obstacle.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/player.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/score.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vga_sync.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/game_controller.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../Downloads/vga.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="game_controller"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/Basys-3-Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

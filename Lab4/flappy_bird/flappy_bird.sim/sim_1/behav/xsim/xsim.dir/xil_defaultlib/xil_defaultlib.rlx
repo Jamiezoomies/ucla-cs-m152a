@@ -1,0 +1,13 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/Student/Desktop/flappy_bird/flappy_bird.sim/sim_1/behav/xsim/glbl.v,1717198592,verilog,,,,glbl,,,,,,,,
+C:/Users/Student/Desktop/flappy_bird/flappy_bird.srcs/sources_1/new/check_collision.v,1717530144,verilog,,C:/Users/Student/Desktop/flappy_bird/flappy_bird.srcs/sources_1/new/clock_divider.v,,check_collision,,,,,,,,
+C:/Users/Student/Desktop/flappy_bird/flappy_bird.srcs/sources_1/new/clock_divider.v,1717529691,verilog,,C:/Users/Student/Desktop/flappy_bird/flappy_bird.srcs/sources_1/new/debouncer.v,,clock_divider,,,,,,,,
+C:/Users/Student/Desktop/flappy_bird/flappy_bird.srcs/sources_1/new/debouncer.v,1717198594,verilog,,C:/Users/Student/Desktop/flappy_bird/flappy_bird.srcs/sources_1/new/obstacle.v,,debouncer,,,,,,,,
+C:/Users/Student/Desktop/flappy_bird/flappy_bird.srcs/sources_1/new/game_controller.v,1717532273,verilog,,,,game_controller,,,,,,,,
+C:/Users/Student/Desktop/flappy_bird/flappy_bird.srcs/sources_1/new/obstacle.v,1717198594,verilog,,C:/Users/Student/Desktop/flappy_bird/flappy_bird.srcs/sources_1/new/player.v,,obstacle,,,,,,,,
+C:/Users/Student/Desktop/flappy_bird/flappy_bird.srcs/sources_1/new/player.v,1717198594,verilog,,C:/Users/Student/Desktop/flappy_bird/flappy_bird.srcs/sources_1/new/score.v,,player,,,,,,,,
+C:/Users/Student/Desktop/flappy_bird/flappy_bird.srcs/sources_1/new/score.v,1717529217,verilog,,C:/Users/Student/Desktop/flappy_bird/flappy_bird.srcs/sources_1/new/vga_sync.v,,score_system,,,,,,,,
+C:/Users/Student/Desktop/flappy_bird/flappy_bird.srcs/sources_1/new/vga_sync.v,1717530167,verilog,,C:/Users/Student/Desktop/flappy_bird/flappy_bird.srcs/sources_1/new/game_controller.v,,vga_sync,,,,,,,,
